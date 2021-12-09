@@ -1,0 +1,18 @@
+C:\Users\XALO1\Desktop\Ingenieria Eléctrica\Programación Bajo Plataformas Abiertas\Project\proyecto_plataformas\.mono\temp\bin\Debug\proyecto plataformas.dll
+C:\Users\XALO1\Desktop\Ingenieria Eléctrica\Programación Bajo Plataformas Abiertas\Project\proyecto_plataformas\.mono\temp\bin\Debug\proyecto plataformas.pdb
+C:\Users\XALO1\Desktop\Ingenieria Eléctrica\Programación Bajo Plataformas Abiertas\Project\proyecto_plataformas\.mono\temp\obj\Debug\proyecto plataformas.csproj.AssemblyReference.cache
+C:\Users\XALO1\Desktop\Ingenieria Eléctrica\Programación Bajo Plataformas Abiertas\Project\proyecto_plataformas\.mono\temp\obj\Debug\proyecto plataformas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\XALO1\Desktop\Ingenieria Eléctrica\Programación Bajo Plataformas Abiertas\Project\proyecto_plataformas\.mono\temp\obj\Debug\proyecto plataformas.AssemblyInfoInputs.cache
+C:\Users\XALO1\Desktop\Ingenieria Eléctrica\Programación Bajo Plataformas Abiertas\Project\proyecto_plataformas\.mono\temp\obj\Debug\proyecto plataformas.AssemblyInfo.cs
+C:\Users\XALO1\Desktop\Ingenieria Eléctrica\Programación Bajo Plataformas Abiertas\Project\proyecto_plataformas\.mono\temp\obj\Debug\proyecto plataformas.csproj.CoreCompileInputs.cache
+C:\Users\XALO1\Desktop\Ingenieria Eléctrica\Programación Bajo Plataformas Abiertas\Project\proyecto_plataformas\.mono\temp\obj\Debug\proyecto plataformas.dll
+C:\Users\XALO1\Desktop\Ingenieria Eléctrica\Programación Bajo Plataformas Abiertas\Project\proyecto_plataformas\.mono\temp\obj\Debug\proyecto plataformas.pdb
+C:\Users\Magalee\Documents\Universidad\proyecto_plataformas\.mono\temp\bin\Debug\proyecto plataformas.dll
+C:\Users\Magalee\Documents\Universidad\proyecto_plataformas\.mono\temp\bin\Debug\proyecto plataformas.pdb
+C:\Users\Magalee\Documents\Universidad\proyecto_plataformas\.mono\temp\obj\Debug\proyecto plataformas.csproj.AssemblyReference.cache
+C:\Users\Magalee\Documents\Universidad\proyecto_plataformas\.mono\temp\obj\Debug\proyecto plataformas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Magalee\Documents\Universidad\proyecto_plataformas\.mono\temp\obj\Debug\proyecto plataformas.AssemblyInfoInputs.cache
+C:\Users\Magalee\Documents\Universidad\proyecto_plataformas\.mono\temp\obj\Debug\proyecto plataformas.AssemblyInfo.cs
+C:\Users\Magalee\Documents\Universidad\proyecto_plataformas\.mono\temp\obj\Debug\proyecto plataformas.csproj.CoreCompileInputs.cache
+C:\Users\Magalee\Documents\Universidad\proyecto_plataformas\.mono\temp\obj\Debug\proyecto plataformas.dll
+C:\Users\Magalee\Documents\Universidad\proyecto_plataformas\.mono\temp\obj\Debug\proyecto plataformas.pdb
