@@ -32,6 +32,12 @@ public class Player : KinematicBody2D
 
 	[Signal]
 	public delegate void Death();
+	
+	[Signal]
+	public delegate void Damage();
+	
+	[Signal]
+	public delegate void Respawn();
 
 	private float pdf = 5f;
 
@@ -117,7 +123,7 @@ public class Player : KinematicBody2D
 		health -= 1;
 		GD.Print("Current Health: " + health);
 		velocity = MoveAndSlide(new Vector2 (5000f * -direccion, -200f), Vector2.Up);
-		
+		EmitSignal(nameof(Damage));
 		isTakingDamage = true;
 		if (health <= 0)
 		{
@@ -130,6 +136,7 @@ public class Player : KinematicBody2D
 	}
 
 	public void RespawnPlayer () {
+		EmitSignal(nameof(Respawn));
 		Show();
 		health = 3;
 	}
