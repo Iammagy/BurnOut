@@ -10,6 +10,8 @@ public class Player : KinematicBody2D
 	private  const float gravedad = 800f;
 	private float friction = 0.7f; //variable para el lurping
 
+	private float salto = 350f; //Intensidad de salto
+
 	private float acceleration = 0.01f; //variable para el lurping
 
 	private float climb_time = 3f;
@@ -90,17 +92,13 @@ public class Player : KinematicBody2D
 				if (climb_time > 0)
 					{
 					
-						motion.y -= 250;
+						motion.y -= salto;
 				} else
 					{
 						motion.y += caida * delta;
 						animatedSprite.Play("Fall"); //animacion caida
 					}
-				}  else {
-
-			animatedSprite.Play("Idle"); //animacion quieta
-
-			}	
+				}
 		}
 
 
