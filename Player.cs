@@ -12,7 +12,7 @@ public class Player : KinematicBody2D
 
 	private float acceleration = 0.01f; //variable para el lurping
 
-	private float climb_time = 5f;
+	private float climb_time = 3f;
 
 	private float caida = 100000; //variable para controlar la gravedad cuaando se hace el salto
 
@@ -81,32 +81,35 @@ public class Player : KinematicBody2D
 			
 		}
 
-		if (Input.IsActionJustPressed("jump")) {
+		if (IsOnWall()){
 
-			climb_time -= delta;
+			if (Input.IsActionJustPressed("jump")) {
 
-			if (climb_time > 0)
-				{
-				
-			} else
-				{
-					motion.y += caida *delta;
-					animatedSprite.Play("Fall"); //animacion caida
-				}
-			}
-		
-		} else {
+				climb_time -= delta;
 
-		animatedSprite.Play("Idle"); //animacion quieta
+				if (climb_time > 0)
+					{
+					
+						motion.y -= 250;
+				} else
+					{
+						motion.y += caida * delta;
+						animatedSprite.Play("Fall"); //animacion caida
+					}
+				}  else {
 
-		}	
+			animatedSprite.Play("Idle"); //animacion quieta
+
+			}	
+		}
 
 
 	motion.y += gravedad * delta; //Hace que caiga más rápido el personaje
 	motion = MoveAndSlide(motion);
 
   }
-
+  
+}
 
 	public void TakeDamage(){
 		GD.Print("Damage Taken");
