@@ -8,7 +8,7 @@
 [ext_resource path="res://Respawn.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/Art/Sprites/pdf.png" type="Texture" id=7]
 [ext_resource path="res://pdf.cs" type="Script" id=8]
-[ext_resource path="res://assets/Art/Images/fondo.jpg" type="Texture" id=9]
+[ext_resource path="res://assets/Art/Images/girasol.jpg" type="Texture" id=9]
 [ext_resource path="res://assets/Orbitron-VariableFont_wght.ttf" type="DynamicFontData" id=10]
 [ext_resource path="res://assets/Art/Sprites/heart.webp" type="Texture" id=11]
 [ext_resource path="res://assets/Art/Sprites/clock.png" type="Texture" id=12]
@@ -125,7 +125,7 @@ position = Vector2( -4, 0.5 )
 shape = SubResource( 4 )
 
 [node name="Respawn" parent="." instance=ExtResource( 6 )]
-position = Vector2( -1589, 642 )
+position = Vector2( -1473.6, 530.578 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -185,7 +185,7 @@ __meta__ = {
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/ParallaxBackground"]
 margin_left = -191.0
 margin_right = 1280.0
-margin_bottom = 679.0
+margin_bottom = 959.0
 texture = ExtResource( 9 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -238,6 +238,7 @@ __meta__ = {
 }
 
 [node name="Panel3" type="Panel" parent="CanvasLayer"]
+visible = false
 margin_left = 369.012
 margin_top = 8.02338
 margin_right = 649.012
@@ -334,6 +335,7 @@ scale = Vector2( 0.5, 0.5 )
 
 [connection signal="Damage" from="Player" to="CanvasLayer/Panel2/Label2" method="_on_Player_Damage"]
 [connection signal="Death" from="Player" to="." method="_on_Player_Death"]
+[connection signal="Respawn" from="Player" to="CanvasLayer/Panel/Label/Label" method="_on_Player_Respawn"]
 [connection signal="Respawn" from="Player" to="CanvasLayer/Panel2/Label2" method="_on_Player_Respawn"]
 [connection signal="PDF" from="pdf" to="." method="_on_pdf_PDF"]
 [connection signal="body_entered" from="pdf/Area2D" to="pdf" method="_on_Area2D_body_entered"]

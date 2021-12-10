@@ -57,5 +57,11 @@ public class pdfLabel : Label
 		count++;
 		Text = count.ToString();
 	}
-
+	
+	private void _on_Player_Respawn()
+	{
+	// Replace with function body.
+	
+	}
+	
 }
