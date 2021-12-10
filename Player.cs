@@ -32,7 +32,6 @@ public class Player : KinematicBody2D
 
 
 
-
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -82,7 +81,6 @@ public class Player : KinematicBody2D
 			
 		}
 
-	
 		if (Input.IsActionJustPressed("jump")) {
 
 			climb_time -= delta;
@@ -96,16 +94,17 @@ public class Player : KinematicBody2D
 					animatedSprite.Play("Fall"); //animacion caida
 				}
 			}
-		}
-	} else {
+		
+		} else {
 
 		animatedSprite.Play("Idle"); //animacion quieta
 
-	}	
+		}	
 
 
 	motion.y += gravedad * delta; //Hace que caiga más rápido el personaje
 	motion = MoveAndSlide(motion);
+
   }
 
 
