@@ -28,7 +28,5 @@ public class pdf : Node2D
 
 			}
 		}
-
 	}
-
 }

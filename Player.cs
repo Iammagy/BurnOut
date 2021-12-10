@@ -33,6 +33,8 @@ public class Player : KinematicBody2D
 	[Signal]
 	public delegate void Death();
 
+	private float pdf = 5f;
+
 
 
 	// Called when the node enters the scene tree for the first time.
