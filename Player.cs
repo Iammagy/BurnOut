@@ -10,7 +10,8 @@ public class Player : KinematicBody2D
 	private  const float gravedad = 800f;
 	private float friction = 0.7f; //variable para el lurping
 
-	private float salto = 350f; //Intensidad de salto
+	[Export]
+	private float salto = 450f; //Intensidad de salto
 
 	private float acceleration = 0.01f; //variable para el lurping
 
@@ -29,7 +30,6 @@ public class Player : KinematicBody2D
 	private AnimatedSprite animatedSprite;
 
 	[Signal]
-
 	public delegate void Death();
 
 
