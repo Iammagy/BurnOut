@@ -3,15 +3,16 @@ using System;
 
 public class Player : KinematicBody2D
 {
-	Vector2 motion = new Vector2(0 , 0);
-	private float speed_x = 15500;
+	Vector2 velocity = new Vector2(0 , 0);
+	private float speed_x = 25000;
+	
 	
 	//Lurping (Linear interpolation), se hace con la biblioteca Mathf y le da un efecto realista de inercia
 	private  const float gravedad = 800f;
 	private float friction = 0.7f; //variable para el lurping
 
 	[Export]
-	private float salto = 450f; //Intensidad de salto
+	private float salto = 550f; //Intensidad de salto
 
 	private float acceleration = 0.01f; //variable para el lurping
 
@@ -48,7 +49,7 @@ public class Player : KinematicBody2D
 
 		//Comandos para moverse  *************************************************************
 
-		motion.x = 0; //Hace que el personaje se deje de mover al dejar de presionar las teclas
+		velocity.x = 0; //Hace que el personaje se deje de mover al dejar de presionar las teclas
 		
 		direccion = 0;
 		
@@ -67,16 +68,16 @@ public class Player : KinematicBody2D
 		}
 		if (direccion != 0)
 		{
-			motion.x = Mathf.Lerp(motion.x, direccion * speed_x, acceleration);	
+			velocity.x = Mathf.Lerp(velocity.x, direccion * speed_x, acceleration);	
 			animatedSprite.Play("Run"); //animacion correr
 			
 
 		} else
 		{
-			motion.x = Mathf.Lerp(motion.x, 0, friction);
+			velocity.x = Mathf.Lerp(velocity.x, 0, friction);
 			animatedSprite.Play("Idle"); //animacion quieta
 
-			if (motion.x < 5 && motion.x > -5) //permite que el personaje no se mueva cuando recibe daño
+			if (velocity.x < 5 && velocity.x > -5) //permite que el personaje no se mueva cuando recibe daño
 			{
 				isTakingDamage = false;
 			}
@@ -92,18 +93,18 @@ public class Player : KinematicBody2D
 				if (climb_time > 0)
 					{
 					
-						motion.y -= salto;
+						velocity.y -= salto;
 				} else
 					{
-						motion.y += caida * delta;
+						velocity.y += caida * delta;
 						animatedSprite.Play("Fall"); //animacion caida
 					}
 				}
 		}
 
 
-	motion.y += gravedad * delta; //Hace que caiga más rápido el personaje
-	motion = MoveAndSlide(motion);
+	velocity.y += gravedad * delta; //Hace que caiga más rápido el personaje
+	velocity = MoveAndSlide(velocity);
 
   }
   
@@ -112,8 +113,8 @@ public class Player : KinematicBody2D
 	public void TakeDamage(){
 		GD.Print("Damage Taken");
 		health -= 1;
-		GD.Print("Current Health: "+ health);
-		motion = MoveAndSlide(new Vector2 (5000f * -direccion, -200f), Vector2.Up);
+		GD.Print("Current Health: " + health);
+		velocity = MoveAndSlide(new Vector2 (5000f * -direccion, -200f), Vector2.Up);
 		
 		isTakingDamage = true;
 		if (health <= 0)
