@@ -22,13 +22,15 @@ position = Vector2( 1.5, 6 )
 shape = SubResource( 1 )
 
 [node name="LeftRaycast" type="RayCast2D" parent="."]
-position = Vector2( -24, 28 )
+position = Vector2( -19, 28 )
 enabled = true
+cast_to = Vector2( 0, 10 )
 collide_with_areas = true
 
 [node name="RightRaycast" type="RayCast2D" parent="."]
-position = Vector2( 25, 28 )
+position = Vector2( 21, 28 )
 enabled = true
+cast_to = Vector2( 0, 10 )
 
 [node name="Area2D" type="Area2D" parent="."]
 
