@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/su.PNG-44ef460e169e5bb5346f36dcfda0a511.stex"
+path="res://.import/character_femaleAdventurer_interact.png-c04b3bb6d4c4114249f0553e2cd0f019.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Art/tileset/su.PNG"
-dest_files=[ "res://.import/su.PNG-44ef460e169e5bb5346f36dcfda0a511.stex" ]
+source_file="res://assets/Player/Interacting/character_femaleAdventurer_interact.png"
+dest_files=[ "res://.import/character_femaleAdventurer_interact.png-c04b3bb6d4c4114249f0553e2cd0f019.stex" ]
 
 [params]
 

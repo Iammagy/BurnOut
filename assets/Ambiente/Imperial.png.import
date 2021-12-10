@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/su.PNG-44ef460e169e5bb5346f36dcfda0a511.stex"
+path="res://.import/Imperial.png-2b60e648fb901b58456ca33d3da2bca5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Art/tileset/su.PNG"
-dest_files=[ "res://.import/su.PNG-44ef460e169e5bb5346f36dcfda0a511.stex" ]
+source_file="res://assets/Ambiente/Imperial.png"
+dest_files=[ "res://.import/Imperial.png-2b60e648fb901b58456ca33d3da2bca5.stex" ]
 
 [params]
 

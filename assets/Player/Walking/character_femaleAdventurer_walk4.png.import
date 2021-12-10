@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/su.PNG-44ef460e169e5bb5346f36dcfda0a511.stex"
+path="res://.import/character_femaleAdventurer_walk4.png-bc4406e11497340febbee54dad089da7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Art/tileset/su.PNG"
-dest_files=[ "res://.import/su.PNG-44ef460e169e5bb5346f36dcfda0a511.stex" ]
+source_file="res://assets/Player/Walking/character_femaleAdventurer_walk4.png"
+dest_files=[ "res://.import/character_femaleAdventurer_walk4.png-bc4406e11497340febbee54dad089da7.stex" ]
 
 [params]
 
